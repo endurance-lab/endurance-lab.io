@@ -1,0 +1,29 @@
+baseURL = 'https://endurance-lab.io'
+languageCode = 'en-US'
+title = 'Endurance Lab'
+
+[menus]
+  [[menus.main]]
+    name = '⦿'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Endurance Design'
+    pageRef = '/endurance-design'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Who is Endurance for'
+    pageRef = '/who-is-endurance-for'
+    weight = 30
+
+  [[menus.main]]
+    name = 'Why are we doing?'
+    pageRef = '/whyre-we-doing'
+    weight = 40    
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'
