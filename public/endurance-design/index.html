@@ -52,7 +52,94 @@
     
     <time datetime="2025-06-17T08:00:00-07:00">June 17, 2025</time>
     <div class="flex flex-col justify-center gap-4">
-      <h2 id="platform-design">Platform Design</h2>
+      <h4 id="-principles">⦿ Principles</h4>
+<blockquote>
+<p>Endurance cares about systems – so humans can too. Amplify human intelligence, not replace it.</p></blockquote>
+<ol>
+<li>Safety first design – grounded in complex adaptive systems theory (R. Cook)</li>
+<li>Cognitive scaffolding – supporting cumulative culture and psychological safety</li>
+<li>Value flow (UX) – centered on relevance realization (J. Vervaeke)</li>
+<li>Autonomy – promise-theoretic approach (M. Burgess)</li>
+<li>Surprise minimization under constraints – &ldquo;Model.Fit.Evolve&rdquo;</li>
+<li>Learning organization
+<ul>
+<li>Building a theory about hierarchical objects with explanatory capacity</li>
+<li>Making abstract things sensible</li>
+</ul>
+</li>
+</ol>
+<h4 id="-economic-perspective">⦿ Economic perspective</h4>
+<p>We frame our goal for platform design in terms of scope economy, where competitive advantage and economic value are derived from joint production across product engineering teams.</p>
+<p>Cognitive scaffolding for teams enables cooperation by maintaining shared causal models and explicit expectations — providing structured support that offloads cognitive effort and reduces the cost of delays.</p>
+<p>This knowledge flow facilitates optimal decision-making among trusted agents — both human and AI — while enhancing the capacity for market adaptation.</p>
+<h4 id="-strategic-perspective">⦿ Strategic perspective</h4>
+<p>Platform design should provide capabilities that help execute business (what) / product (how) activities in a measurable and repeatable way.</p>
+<p>This approach mirrors the verification – validation cycle: ensuring that we are building the right capabilities (validation), and that we are building them correctly (verification).</p>
+<p>To support execution with confidence, we do capability design for [Flow] — figuring out the best possible configuration where autonomous decision-making is possible.</p>
+<p>[Activity] is a special arrangement of states – a special configuration – of relevant events that happen. [Capability] provides conditions in which relevant events happen and has the power to maintain activity over time.</p>
+<p>With the right capability design, we identify high-relevance and low-cost future states with low friction and high precision — leading us to the best possible outcomes.</p>
+<p>Here, our approach to platform design is fully compatible with the DORA+SPACE framework. We should have the ability to measure performance — such as software delivery and reliability — and validate our capabilities against target outcomes like organizational performance and individual well-being.</p>
+<p>But considering our defined principles, we aim to design a platform with a tighter and more explicit verification-validation loop, where cognitive scaffolding and knowledge flow take advantage of joint context. For that purpose, in every cycle we ask the question:</p>
+<blockquote>
+<p>What are we model for? Fit to the model. Adapt</p></blockquote>
+<p>And our platform should help human+AI agents make sense of what is going on and what to do next.</p>
+<h4 id="-composable-design">⦿ Composable design</h4>
+<p>To effectively achieve the design targets for Flow, the platform should implement four independent components that are capable of providing conditions for information propagation — aligning perception, context, and action.</p>
+<ul>
+<li>Observability</li>
+<li>Decision</li>
+<li>Inference</li>
+<li>Assist</li>
+</ul>
+<h4 id="-conceptual-mapping">⦿ Conceptual mapping</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>+-------------------------------------------------------------+
+</span></span><span style="display:flex;"><span>|                       Endurance Platform                    |
+</span></span><span style="display:flex;"><span>+-------------------------------------------------------------+
+</span></span><span style="display:flex;"><span>|                                                             |
+</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
+</span></span><span style="display:flex;"><span>|  |   Economy         |       |   Cumulative      |          |
+</span></span><span style="display:flex;"><span>|  |   -&gt; Balancing    |       |   Culture         |          |
+</span></span><span style="display:flex;"><span>|  |   Complexity      |       |                   |          |
+</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
+</span></span><span style="display:flex;"><span>|           |                           ^                     |
+</span></span><span style="display:flex;"><span>|           v                           |                     |
+</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
+</span></span><span style="display:flex;"><span>|  |   Knowledge Flow  |       |   Cognitive       |          |
+</span></span><span style="display:flex;"><span>|  |   (Shared Causal  |       |   Scaffolding     |          |
+</span></span><span style="display:flex;"><span>|  |   Models)         |       |   (Above/Below    |          |
+</span></span><span style="display:flex;"><span>|  +-------------------+       |   the Line)       |          |
+</span></span><span style="display:flex;"><span>|           |                           |                     |
+</span></span><span style="display:flex;"><span>|           v                           |                     |
+</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
+</span></span><span style="display:flex;"><span>|  |   Observability   |       |   Developer       |          |
+</span></span><span style="display:flex;"><span>|  |   (Contextual     |       |   Experience      |          |
+</span></span><span style="display:flex;"><span>|  |   Clarity)        |       |   (Relevance      |          |
+</span></span><span style="display:flex;"><span>|  +-------------------+       |   Realization)    |          |
+</span></span><span style="display:flex;"><span>|           |                           |                     |
+</span></span><span style="display:flex;"><span>|           v                           |                     |
+</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
+</span></span><span style="display:flex;"><span>|  |   Decision-Making |       |   Coordination    |          |
+</span></span><span style="display:flex;"><span>|  |  Under Uncertainty|       |   (Promise Theory)|          |
+</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
+</span></span><span style="display:flex;"><span>|           |                           |                     |
+</span></span><span style="display:flex;"><span>|           v                           |                     |
+</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
+</span></span><span style="display:flex;"><span>|  |   Execution Engine|       |   Validation      |          |
+</span></span><span style="display:flex;"><span>|  |   (Flow Support)  |       |   <span style="color:#960050;background-color:#1e0010">&amp;</span> Verification  |          |
+</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
+</span></span><span style="display:flex;"><span>|                                                             |
+</span></span><span style="display:flex;"><span>+-------------------------------------------------------------+
+</span></span></code></pre></div><p>Concept breakdown:</p>
+<ul>
+<li>Economy → Balancing Complexity : Aligns with scope economy principles.</li>
+<li>Knowledge Flow : Central to enabling joint production and shared understanding.</li>
+<li>Cognitive Scaffolding : Supports human cognition under uncertainty.</li>
+<li>Observability : Enables contextual clarity and decision-making.</li>
+<li>Developer Experience : Focuses on relevance realization and reducing cognitive load.</li>
+<li>Decision-Making Under Uncertainty : Leverages shared causal models and AI cooperation.</li>
+<li>Coordination : Implements promise theory for distributed responsibility.</li>
+<li>Execution Engine : Acts as a medium for change, supporting flow and agency.</li>
+</ul>
 
       
 
