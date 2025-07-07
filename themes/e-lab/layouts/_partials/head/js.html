@@ -1,16 +1,36 @@
-{{- with resources.Get "js/main.js" }}
-  {{- $opts := dict
-    "minify" (not hugo.IsDevelopment)
+{{- $page := . -}}
+
+{{- $buildOpts := dict
+    "minify"    (not hugo.IsDevelopment)
     "sourceMap" (cond hugo.IsDevelopment "external" "")
-    "targetPath" "js/main.js"
-  }}
-  {{- with . | js.Build $opts }}
-    {{- if hugo.IsDevelopment }}
-      <script src="{{ .RelPermalink }}"></script>
-    {{- else }}
-      {{- with . | fingerprint }}
-        <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
-      {{- end }}
-    {{- end }}
-  {{- end }}
+  -}}
+
+{{- with resources.Get "js/menu.js" -}}
+  {{- $res := . | js.Build (merge $buildOpts (dict "targetPath" "js/menu.js")) -}}
+  {{- if hugo.IsDevelopment -}}
+    <script src="{{ $res.RelPermalink }}"></script>
+  {{- else -}}
+    {{- $fp := $res | fingerprint -}}
+    <script
+      src="{{ $fp.RelPermalink }}"
+      integrity="{{ $fp.Data.Integrity }}"
+      crossorigin="anonymous">
+    </script>
+  {{- end -}}
 {{- end }}
+
+{{- if $page.IsHome -}}
+  {{- with resources.Get "js/main.js" -}}
+    {{- $res := . | js.Build (merge $buildOpts (dict "targetPath" "js/main.js")) -}}
+    {{- if hugo.IsDevelopment -}}
+      <script src="{{ $res.RelPermalink }}"></script>
+    {{- else -}}
+      {{- $fp := $res | fingerprint -}}
+      <script
+        src="{{ $fp.RelPermalink }}"
+        integrity="{{ $fp.Data.Integrity }}"
+        crossorigin="anonymous">
+      </script>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

@@ -37,3 +37,41 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* article page stylesheets */
+h2 {
+    font-family: 'HomeVideo', 'sans-serif';
+    font-size: 1.3rem!important;
+}
+
+h2::first-letter {
+    font-size: 1.6rem!important;
+}
+
+ul, ol {
+    padding-left: 1rem!important;
+}
+
+li {
+    list-style-type: disc;
+}
+
+/* p {
+    font-family: 'Kizhich', 'sans-serif';
+} */
+
+blockquote {
+    background: #d7c9aa;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+.highlight {
+    overflow: scroll;
+    background: #d7c9aa;
+}
+
+.highlight * {
+    background: inherit!important;
+    color: #000!important;
+}

@@ -4,7 +4,7 @@ title = 'Endurance Lab'
 
 [menus]
   [[menus.main]]
-    name = '⦿'
+    name = 'Home'
     pageRef = '/'
     weight = 10
 
@@ -21,7 +21,7 @@ title = 'Endurance Lab'
   [[menus.main]]
     name = 'Why are we doing?'
     pageRef = '/whyre-we-doing'
-    weight = 40    
+    weight = 40
 
 [module]
   [module.hugoVersion]

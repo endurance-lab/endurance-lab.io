@@ -4,7 +4,7 @@ date = 2025-06-17T08:00:00-07:00
 draft = false
 +++
 
-#### ⦿ Principles
+## ⦿ Principles
 
 >Endurance cares about systems – so humans can too. Amplify human intelligence, not replace it.
 
@@ -17,14 +17,14 @@ draft = false
     - Building a theory about hierarchical objects with explanatory capacity
     - Making abstract things sensible
 
-#### ⦿ Economic perspective
+## ⦿ Economic perspective
 We frame our goal for platform design in terms of scope economy, where competitive advantage and economic value are derived from joint production across product engineering teams.
 
 Cognitive scaffolding for teams enables cooperation by maintaining shared causal models and explicit expectations — providing structured support that offloads cognitive effort and reduces the cost of delays.
 
 This knowledge flow facilitates optimal decision-making among trusted agents — both human and AI — while enhancing the capacity for market adaptation.
 
-#### ⦿ Strategic perspective
+## ⦿ Strategic perspective
 Platform design should provide capabilities that help execute business (what) / product (how) activities in a measurable and repeatable way.
 
 This approach mirrors the verification – validation cycle: ensuring that we are building the right capabilities (validation), and that we are building them correctly (verification).
@@ -43,7 +43,7 @@ But considering our defined principles, we aim to design a platform with a tight
 
 And our platform should help human+AI agents make sense of what is going on and what to do next.
 
-#### ⦿ Composable design
+## ⦿ Composable design
 To effectively achieve the design targets for Flow, the platform should implement four independent components that are capable of providing conditions for information propagation — aligning perception, context, and action.
 
 - Observability
@@ -51,7 +51,7 @@ To effectively achieve the design targets for Flow, the platform should implemen
 - Inference
 - Assist
 
-#### ⦿ Conceptual mapping
+## ⦿ Conceptual mapping
 ```markdown
 +-------------------------------------------------------------+
 |                       Endurance Platform                    |
@@ -101,4 +101,3 @@ Concept breakdown:
  - Decision-Making Under Uncertainty : Leverages shared causal models and AI cooperation.
  - Coordination : Implements promise theory for distributed responsibility.
  - Execution Engine : Acts as a medium for change, supporting flow and agency.
-

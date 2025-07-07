@@ -1,13 +1,28 @@
 {{ define "main" }}
-<section class="text-black bg-[#FCF4E0] flex flex-col justify-center gap-12 px-4 md:px-48 py-24">
-    <h1 class="font-title text-3xl md:text-7xl leading-tight">{{ .Title }}</h1>
+<a href="/" class="z-50 fixed top-6 left-6 w-8 h-8 hidden md:flex flex-col justify-center items-center focus:outline-none group">
+    <span class="relative top-[-2px] left-[-5px] w-[60%] block h-1 bg-stone-950 rounded transform -rotate-45 -translate-y-1/2 transition-all duration-300 group-hover:bg-stone-800"></span>
+    <span class="absolute top-2/4 left-[5px] w-0 block h-1 bg-stone-950 rounded transform -translate-y-1/2 transition-all duration-300 group-hover:bg-stone-800 group-hover:w-full"></span>
+    <span class="relative top-[6px] left-[-5px] w-[60%] block h-1 bg-stone-950 rounded transform rotate-45 -translate-y-1/2 transition-all duration-300 group-hover:bg-stone-800"></span>
+</a>
 
-    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-    {{ $dateHuman := .Date | time.Format ":date_long" }}
-    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-    <div class="flex flex-col justify-center gap-4">
-      {{ .Content }}
-      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-</dic>
+<!-- Burger -->
+<button id="burgerBtn" class="z-50 fixed top-6 right-6 flex flex-col justify-around items-center w-8 h-8 focus:outline-none group">
+  <span class="block h-1 w-full bg-stone-950 rounded transition-all duration-300 origin-top-left group-hover:bg-stone-800"></span>
+  <span class="block h-1 w-full bg-stone-950 rounded transition-all duration-300 group-hover:bg-stone-800"></span>
+  <span class="block h-1 w-full bg-stone-950 rounded transition-all duration-300 origin-bottom-left group-hover:bg-stone-800"></span>
+</button>
+
+<!-- Sidebar -->
+<div id="sidebar" class="fixed top-0 right-0 w-96 h-full bg-white shadow-lg translate-x-full transition-transform duration-300 z-40 p-6">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div>
+<div id="overlay" class="fixed inset-0 bg-black bg-opacity-30 hidden z-30"></div>
+
+<section class="text-black bg-[#FCF4E0] flex flex-col justify-center gap-12 px-4 py-12 md:px-24 md:py-24 lg:px-48">
+    <div class="flex flex-col gap-2">
+        <h1 class="font-title text-2xl md:text-3xl lg:text-5xl leading-tight">{{ .Title }}</h1>
+
+        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }} {{ $dateHuman := .Date | time.Format ":date_long" }}
+        <time datetime="{{ $dateMachine }}" class="font-subtitle">{{ $dateHuman }}</time>
+    </div>
+  <div class="flex flex-col justify-center gap-4">{{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
 </section>
 {{ end }}
