@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Endurance Lab</title>
-    <link>//localhost:1313/</link>
+    <link>/</link>
     <description>Recent content in Home on Endurance Lab</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 17 Jun 2025 08:00:00 -0700</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Endurance Design</title>
-      <link>//localhost:1313/endurance-design/</link>
+      <link>/endurance-design/</link>
       <pubDate>Tue, 17 Jun 2025 08:00:00 -0700</pubDate>
-      <guid>//localhost:1313/endurance-design/</guid>
-      <description>&lt;h4 id=&#34;-principles&#34;&gt;⦿ Principles&lt;/h4&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Endurance cares about systems – so humans can too. Amplify human intelligence, not replace it.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Safety first design – grounded in complex adaptive systems theory (R. Cook)&lt;/li&gt;&#xA;&lt;li&gt;Cognitive scaffolding – supporting cumulative culture and psychological safety&lt;/li&gt;&#xA;&lt;li&gt;Value flow (UX) – centered on relevance realization (J. Vervaeke)&lt;/li&gt;&#xA;&lt;li&gt;Autonomy – promise-theoretic approach (M. Burgess)&lt;/li&gt;&#xA;&lt;li&gt;Surprise minimization under constraints – &amp;ldquo;Model.Fit.Evolve&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;Learning organization&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Building a theory about hierarchical objects with explanatory capacity&lt;/li&gt;&#xA;&lt;li&gt;Making abstract things sensible&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h4 id=&#34;-economic-perspective&#34;&gt;⦿ Economic perspective&lt;/h4&gt;&#xA;&lt;p&gt;We frame our goal for platform design in terms of scope economy, where competitive advantage and economic value are derived from joint production across product engineering teams.&lt;/p&gt;</description>
+      <guid>/endurance-design/</guid>
+      <description>&lt;h2 id=&#34;-principles&#34;&gt;⦿ Principles&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Endurance cares about systems – so humans can too. Amplify human intelligence, not replace it.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Safety first design – grounded in complex adaptive systems theory (R. Cook)&lt;/li&gt;&#xA;&lt;li&gt;Cognitive scaffolding – supporting cumulative culture and psychological safety&lt;/li&gt;&#xA;&lt;li&gt;Value flow (UX) – centered on relevance realization (J. Vervaeke)&lt;/li&gt;&#xA;&lt;li&gt;Autonomy – promise-theoretic approach (M. Burgess)&lt;/li&gt;&#xA;&lt;li&gt;Surprise minimization under constraints – &amp;ldquo;Model.Fit.Evolve&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;Learning organization&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Building a theory about hierarchical objects with explanatory capacity&lt;/li&gt;&#xA;&lt;li&gt;Making abstract things sensible&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;-economic-perspective&#34;&gt;⦿ Economic perspective&lt;/h2&gt;&#xA;&lt;p&gt;We frame our goal for platform design in terms of scope economy, where competitive advantage and economic value are derived from joint production across product engineering teams.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Who is Endurance for?</title>
-      <link>//localhost:1313/who-is-endurance-for/</link>
+      <link>/who-is-endurance-for/</link>
       <pubDate>Tue, 17 Jun 2025 08:00:00 -0700</pubDate>
-      <guid>//localhost:1313/who-is-endurance-for/</guid>
-      <description>&lt;h3 id=&#34;-for-founders--flow-state&#34;&gt;&lt;strong&gt;⦿ For Founders – Flow State&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Level: Context&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;Bootstrap high-performance from day one.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Build clear situational awareness.&lt;/li&gt;&#xA;&lt;li&gt;Foster trust, autonomy, and mastery.&lt;/li&gt;&#xA;&lt;li&gt;Create coherent context for action.&lt;/li&gt;&#xA;&lt;li&gt;Enable founder-led teams to stay in flow.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;-for-product-leaders--design-for-flow&#34;&gt;&lt;strong&gt;⦿ For Product Leaders – Design for Flow&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Level: Landscape&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Enable win-win cooperation at scale&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Support collaborative autonomy across teams.&lt;/li&gt;&#xA;&lt;li&gt;Do faster, more confident decision-making.&lt;/li&gt;&#xA;&lt;li&gt;Use knowledge flow to build shared context.&lt;/li&gt;&#xA;&lt;li&gt;Drive market adaptation through collective intelligence.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;-for-executives--accelerate-flow&#34;&gt;&lt;strong&gt;⦿ For Executives – Accelerate Flow&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Level: Market&lt;/p&gt;</description>
+      <guid>/who-is-endurance-for/</guid>
+      <description>&lt;h2 id=&#34;-for-founders--flow-state&#34;&gt;⦿ For Founders – Flow State&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Level: Context&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;Bootstrap high-performance from day one.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Build clear situational awareness.&lt;/li&gt;&#xA;&lt;li&gt;Foster trust, autonomy, and mastery.&lt;/li&gt;&#xA;&lt;li&gt;Create coherent context for action.&lt;/li&gt;&#xA;&lt;li&gt;Enable founder-led teams to stay in flow.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-for-product-leaders--design-for-flow&#34;&gt;⦿ For Product Leaders – Design for Flow&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Level: Landscape&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Enable win-win cooperation at scale&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Support collaborative autonomy across teams.&lt;/li&gt;&#xA;&lt;li&gt;Do faster, more confident decision-making.&lt;/li&gt;&#xA;&lt;li&gt;Use knowledge flow to build shared context.&lt;/li&gt;&#xA;&lt;li&gt;Drive market adaptation through collective intelligence.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-for-executives--accelerate-flow&#34;&gt;⦿ For Executives – Accelerate Flow&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Level: Market&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why are we doing?</title>
-      <link>//localhost:1313/whyre-we-doing/</link>
+      <link>/whyre-we-doing/</link>
       <pubDate>Tue, 17 Jun 2025 08:00:00 -0700</pubDate>
-      <guid>//localhost:1313/whyre-we-doing/</guid>
-      <description>&lt;h1 id=&#34;-why-systems-fail-developer-experience-as-cognitive-enablement&#34;&gt;&lt;strong&gt;⦿ Why Systems Fail: Developer Experience as Cognitive Enablement&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Anything that requires someone who is already very busy to spend time on something where the gains don’t appear worthwhile is likely to fail.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Most systems don’t fail because of a single catastrophic error. They fail because complexity outpaces cognition.&lt;/p&gt;&#xA;&lt;p&gt;As Richard I. Cook noted in &lt;em&gt;How Complex Systems Fail&lt;/em&gt;:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;“High-risk environments rarely collapse from a single error. Instead, many small factors accrue until the complexity that individuals must manage exceeds their ability.”&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>/whyre-we-doing/</guid>
+      <description>&lt;h2 id=&#34;-why-systems-fail-developer-experience-as-cognitive-enablement&#34;&gt;⦿ Why Systems Fail: Developer Experience as Cognitive Enablement&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Anything that requires someone who is already very busy to spend time on something where the gains don’t appear worthwhile is likely to fail.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Most systems don’t fail because of a single catastrophic error. They fail because complexity outpaces cognition.&lt;/p&gt;&#xA;&lt;p&gt;As Richard I. Cook noted in &lt;em&gt;How Complex Systems Fail&lt;/em&gt;:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;“High-risk environments rarely collapse from a single error. Instead, many small factors accrue until the complexity that individuals must manage exceeds their ability.”&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

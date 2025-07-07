@@ -4,7 +4,7 @@ date = 2025-06-17T08:00:00-07:00
 draft = false
 +++
 
-### **⦿ For Founders – Flow State**
+## ⦿ For Founders – Flow State
 >Level: Context
 
 _Bootstrap high-performance from day one._
@@ -14,7 +14,7 @@ _Bootstrap high-performance from day one._
 - Enable founder-led teams to stay in flow.
 
 
-### **⦿ For Product Leaders – Design for Flow**
+## ⦿ For Product Leaders – Design for Flow
 > Level: Landscape
 
 _"Enable win-win cooperation at scale"_
@@ -24,7 +24,7 @@ _"Enable win-win cooperation at scale"_
 - Drive market adaptation through collective intelligence.
 
 
-### **⦿ For Executives – Accelerate Flow**
+## ⦿ For Executives – Accelerate Flow
 > Level: Market
 
 _"Turn platform design into economic leverage"_

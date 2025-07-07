@@ -4,7 +4,7 @@ date = 2025-06-17T08:00:00-07:00
 draft = false
 +++
 
-# **⦿ Why Systems Fail: Developer Experience as Cognitive Enablement**  
+## ⦿ Why Systems Fail: Developer Experience as Cognitive Enablement
 
 > _"Anything that requires someone who is already very busy to spend time on something where the gains don’t appear worthwhile is likely to fail."_
 
@@ -16,7 +16,7 @@ As Richard I. Cook noted in *How Complex Systems Fail*:
 This is not just about technical failure — it’s about poor cognitive design.
 
 
-## **⦿ The Hidden Cost of Poor Cognitive Design**  
+## ⦿ The Hidden Cost of Poor Cognitive Design
 
 Modern platforms often treat developers as end users — but they’re not designing for how people actually think and work.
 
@@ -30,9 +30,9 @@ Teams become overwhelmed, coordination costs rise, and decisions are made with i
 This is where Developer Experience (DX) becomes more than usability — it becomes cognitive enablement.
 
 
-## **⦿ Developer Experience as Cognitive Enablement**  
+## ⦿ Developer Experience as Cognitive Enablement
 
-> _“Observability is the process through which one develops the ability to ask meaningful questions, get useful answers, and act effectively on what you learn.”_  
+> _“Observability is the process through which one develops the ability to ask meaningful questions, get useful answers, and act effectively on what you learn.”_
 – [Observability is a Team Sport](https://medium.com/womenintechnology/observability-is-a-team-sport-168277f3eb93)
 
 Developer Experience should be designed to support human cognition.
@@ -45,7 +45,7 @@ This means:
 When done right, DX becomes the bridge between infrastructure and intention — turning tools into instruments for intelligent action.
 
 
-## **⦿ Balancing Tensions: Reliability, Integrity, and Relevance**  
+## ⦿ Balancing Tensions: Reliability, Integrity, and Relevance
 
 No system exists in isolation. Every platform must balance competing priorities:
 - Reliability: Ensuring stability and safety
@@ -60,7 +60,7 @@ From Platform Engineering Book, Camille Fournier:
 This isn’t about enforcing control — it’s about enabling teams to make better decisions with bounded risk.
 
 
-## **⦿ Toward Win-Win Outcomes**  
+## ⦿ Toward Win-Win Outcomes
 
 Win-win doesn’t mean everyone gets exactly what they want — it means:
 - Teams operate with shared intent

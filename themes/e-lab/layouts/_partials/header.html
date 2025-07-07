@@ -1,37 +1,48 @@
-    <!-- ————— HERO ————— -->
-    <section id="hero" class="relative h-screen overflow-hidden">
-      <div class="absolute inset-0 flex flex-col justify-center gap-4 md:gap-6 px-4 md:px-48 pointer-events-none">
-        <span class="font-subtitle text-lg md:text-3xl leading-[normal] md:leading-[normal] text-[#221FC2]">
-          Empower
-          <br />
-          Engineering Teams with
-        </span>
-        <h1 class="font-title text-3xl md:text-7xl leading-tight">
-          Endurance
-          <br />
-          Intelligence
-        </h1>
-        <p class="font-regular font-bold max-w-lg text-base md:text-2xl">Cognitive scaffolding for understanding cause&nbsp;and&nbsp;effect in complex systems.</p>
-      </div>
+<!-- ————— HERO ————— -->
+<section id="hero" class="relative h-screen overflow-hidden">
+  <!-- Burger -->
+  <button id="burgerBtn" class="z-50 fixed top-6 right-6 flex flex-col justify-around items-center w-8 h-8 focus:outline-none group">
+    <span class="block h-1 w-full bg-stone-950 rounded transition-all duration-300 origin-top-left group-hover:bg-stone-800"></span>
+    <span class="block h-1 w-full bg-stone-950 rounded transition-all duration-300 group-hover:bg-stone-800"></span>
+    <span class="block h-1 w-full bg-stone-950 rounded transition-all duration-300 origin-bottom-left group-hover:bg-stone-800"></span>
+  </button>
 
-      <div class="fixed -top-12 -left-12 md:-top-24 md:-left-24 w-24 h-24 md:w-60 md:h-60 rounded-full bg-[#C21F28] mix-blend-color-burn pointer-events-none"></div>
-      <div class="fixed -top-12 -right-12 md:-top-24 md:-right-24 w-24 h-24 md:w-60 md:h-60 rounded-full bg-[#E69351] mix-blend-color-burn pointer-events-none"></div>
-      <div class="fixed -bottom-12 -left-12 md:-bottom-24 md:-left-24 w-24 h-24 md:w-60 md:h-60 rounded-full bg-[#A2C152] mix-blend-color-burn pointer-events-none"></div>
-      <div class="fixed -bottom-12 -right-12 md:-bottom-24 md:-right-24 w-24 h-24 md:w-60 md:h-60 rounded-full bg-[#0A3168] mix-blend-color-burn pointer-events-none"></div>
+  <!-- Sidebar -->
+  <div id="sidebar" class="fixed top-0 right-0 w-96 h-full bg-white shadow-lg translate-x-full transition-transform duration-300 z-40 p-6">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div>
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-30 hidden z-30"></div>
 
-      <svg id="triangles" class="fixed inset-0 w-full h-full -z-10" xmlns="http://www.w3.org/2000/svg">
-        <polygon id="tri-blue" points="" fill="#ACD8E4" />
-        <polygon id="tri-pink" points="" fill="#F1CECE" />
-        <polygon id="tri-beige" points="" fill="#F2FFE8" />
-      </svg>
+  <div class="absolute inset-0 flex flex-col justify-center gap-4 md:gap-6 px-4 md:px-48 pointer-events-none">
+    <span class="font-subtitle text-lg md:text-3xl leading-[normal] md:leading-[normal] text-[#221FC2]">
+      Empower
+      <br />
+      Engineering Teams with
+    </span>
+    <h1 class="font-title text-3xl md:text-7xl leading-tight">
+      Endurance
+      <br />
+      Intelligence
+    </h1>
+    <p class="font-regular font-bold max-w-lg text-base md:text-2xl">Cognitive scaffolding for understanding cause&nbsp;and&nbsp;effect in complex systems.</p>
+  </div>
 
-      <div id="logo" class="fixed w-16 h-16 flex items-center justify-center z-20 origin-center mix-blend-exclusion pointer-events-none">
-        <div class="w-full h-full rounded-full border-4 border-white flex items-center justify-center">
-          <div class="w-2/3 h-2/3 bg-white rounded-full"></div>
-        </div>
-      </div>
+  <div class="fixed -top-12 -left-12 md:-top-24 md:-left-24 w-24 h-24 md:w-60 md:h-60 rounded-full bg-[#C21F28] mix-blend-color-burn pointer-events-none"></div>
+  <div class="fixed -top-12 -right-12 md:-top-24 md:-right-24 w-24 h-24 md:w-60 md:h-60 rounded-full bg-[#E69351] mix-blend-color-burn pointer-events-none"></div>
+  <div class="fixed -bottom-12 -left-12 md:-bottom-24 md:-left-24 w-24 h-24 md:w-60 md:h-60 rounded-full bg-[#A2C152] mix-blend-color-burn pointer-events-none"></div>
+  <div class="fixed -bottom-12 -right-12 md:-bottom-24 md:-right-24 w-24 h-24 md:w-60 md:h-60 rounded-full bg-[#0A3168] mix-blend-color-burn pointer-events-none"></div>
 
-      <svg id="arrow" class="fixed bottom-8 left-1/2 w-12 -translate-x-1/2 animate-bounce" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 55 58">
-        <path fill="#C21F28" d="M27.5 58 .22.25h54.56L27.5 58Z" />
-      </svg>
-    </section>
+  <svg id="triangles" class="fixed inset-0 w-full h-full -z-10" xmlns="http://www.w3.org/2000/svg">
+    <polygon id="tri-blue" points="" fill="#ACD8E4" />
+    <polygon id="tri-pink" points="" fill="#F1CECE" />
+    <polygon id="tri-beige" points="" fill="#F2FFE8" />
+  </svg>
+
+  <div id="logo" class="fixed w-16 h-16 flex items-center justify-center z-20 origin-center mix-blend-exclusion pointer-events-none">
+    <div class="w-full h-full rounded-full border-4 border-white flex items-center justify-center">
+      <div class="w-2/3 h-2/3 bg-white rounded-full"></div>
+    </div>
+  </div>
+
+  <svg id="arrow" class="fixed bottom-8 left-1/2 w-12 -translate-x-1/2 animate-bounce" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 55 58">
+    <path fill="#C21F28" d="M27.5 58 .22.25h54.56L27.5 58Z" />
+  </svg>
+</section>
