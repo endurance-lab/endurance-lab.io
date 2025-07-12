@@ -4,16 +4,14 @@ date = 2025-06-17T08:00:00-07:00
 draft = false
 +++
 
-## ⦿ Why Systems Fail: Developer Experience as Cognitive Enablement
+## ⦿ Why Systems Fail
 
-> _"Anything that requires someone who is already very busy to spend time on something where the gains don’t appear worthwhile is likely to fail."_
+> Anything that requires someone who is already very busy to spend time on something where the gains don’t appear worthwhile is likely to fail.
 
 Most systems don’t fail because of a single catastrophic error. They fail because complexity outpaces cognition.
 
 As Richard I. Cook noted in *How Complex Systems Fail*:
-> _“High-risk environments rarely collapse from a single error. Instead, many small factors accrue until the complexity that individuals must manage exceeds their ability.”_
-
-This is not just about technical failure — it’s about poor cognitive design.
+> High-risk environments rarely collapse from a single error. Instead, many small factors accrue until the complexity that individuals must manage exceeds their ability.
 
 
 ## ⦿ The Hidden Cost of Poor Cognitive Design
@@ -27,12 +25,13 @@ Instead of supporting decision-making under uncertainty, systems add friction by
 
 Teams become overwhelmed, coordination costs rise, and decisions are made with incomplete or ambiguous understanding.
 
-This is where Developer Experience (DX) becomes more than usability — it becomes cognitive enablement.
+This is where Developer Experience (DX) becomes more than usability — it becomes cognitive scaffolding.
 
 
-## ⦿ Developer Experience as Cognitive Enablement
+## ⦿ Developer Experience as Cognitive scaffolding
 
-> _“Observability is the process through which one develops the ability to ask meaningful questions, get useful answers, and act effectively on what you learn.”_
+> Observability is the process through which one develops the ability to ask meaningful questions, get useful answers, and act effectively on what you learn.
+
 – [Observability is a Team Sport](https://medium.com/womenintechnology/observability-is-a-team-sport-168277f3eb93)
 
 Developer Experience should be designed to support human cognition.
@@ -55,12 +54,10 @@ No system exists in isolation. Every platform must balance competing priorities:
 These aren’t trade-offs to resolve — they’re dimensions of fitness that evolve over time. By balancing them intentionally, we allow models to adapt, improving alignment between perception, context, and action.
 
 From Platform Engineering Book, Camille Fournier:
-> _“The next stage in removing our production training wheels as an industry is to tear down the fence between SRE and Product Engineering, and make rational investments in reliability as a mindset, based on specific needs.”_
-
-This isn’t about enforcing control — it’s about enabling teams to make better decisions with bounded risk.
+> The next stage in removing our production training wheels as an industry is to tear down the fence between SRE and Product Engineering, and make rational investments in reliability as a mindset, based on specific needs.
 
 
-## ⦿ Toward Win-Win Outcomes
+## ⦿ Toward Win-Win
 
 Win-win doesn’t mean everyone gets exactly what they want — it means:
 - Teams operate with shared intent

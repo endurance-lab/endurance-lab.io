@@ -12,7 +12,7 @@ draft = false
 2. Cognitive scaffolding – supporting cumulative culture and psychological safety
 3. Value flow (UX) – centered on relevance realization (J. Vervaeke)
 4. Autonomy – promise-theoretic approach (M. Burgess)
-5. Surprise minimization under constraints – "Model.Fit.Evolve"
+5. Surprise minimization under constraints
 6. Learning organization
     - Building a theory about hierarchical objects with explanatory capacity
     - Making abstract things sensible
