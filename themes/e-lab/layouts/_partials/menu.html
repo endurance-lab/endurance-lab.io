@@ -11,39 +11,45 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-    <ul class="space-y-2">
-      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-    </ul>
+<div class="menu-header"
+  style="margin-bottom: var(--spacing-lg); border-bottom: 2px solid var(--color-text); padding-bottom: var(--spacing-sm); display: flex; justify-content: space-between; align-items: flex-end;">
+  <span
+    style="font-family: 'Courier Prime', monospace; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">Index</span>
+  <span style="font-family: 'Courier Prime', monospace; font-size: 0.8rem;">v1.0</span>
+</div>
+<ul class="space-y-2">
+  {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+</ul>
 {{- end }}
 
 {{- define "_partials/inline/menu/walk.html" }}
-  {{- $page := .page }}
-  {{- range .menuEntries }}
-    {{- $attrs := dict "href" .URL }}
-    {{- if $page.IsMenuCurrent .Menu . }}
-      {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
-    {{- else if $page.HasMenuCurrent .Menu .}}
-      {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
-    {{- end }}
-    {{- $name := .Name }}
-    {{- with .Identifier }}
-      {{- with T . }}
-        {{- $name = . }}
-      {{- end }}
-    {{- end }}
-    <li class="block text-gray-700 hover:text-black">
-      <a class="font-regular font-bold max-w-lg text-base md:text-xl underline decoration-black/30 hover:decoration-black duration-200"
-        {{- range $k, $v := $attrs }}
-          {{- with $v }}
-            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
-          {{- end }}
-        {{- end -}}
-      >{{ $name }}</a>
-      {{- with .Children }}
-        <ul>
-          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-        </ul>
-      {{- end }}
-    </li>
+{{- $page := .page }}
+{{- range $index, $element := .menuEntries }}
+{{- $attrs := dict "href" .URL }}
+{{- if $page.IsMenuCurrent .Menu . }}
+{{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
+{{- else if $page.HasMenuCurrent .Menu .}}
+{{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
+{{- end }}
+{{- $name := .Name }}
+{{- with .Identifier }}
+{{- with T . }}
+{{- $name = . }}
+{{- end }}
+{{- end }}
+<li class="menu-list-item">
+  <a class="menu-link" href="{{ .URL }}" data-text="{{ $name }}" {{- range $k, $v :=$attrs }} {{- with $v }} {{-
+    printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end -}}>
+    <span class="menu-number"
+      style="font-family: 'Courier Prime', monospace; font-size: 0.7rem; margin-right: 10px; opacity: 0.5;">{{ printf
+      "%02d" (add $index 1) }}</span>
+    {{ $name }}
+  </a>
+  {{- with .Children }}
+  <ul class="menu-sublist">
+    {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+  </ul>
   {{- end }}
+</li>
+{{- end }}
 {{- end }}

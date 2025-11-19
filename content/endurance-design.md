@@ -4,7 +4,7 @@ date = 2025-06-17T08:00:00-07:00
 draft = false
 +++
 
-## ⦿ Principles
+## Principles
 
 >Endurance cares about systems – so humans can too. Amplify human intelligence, not replace it.
 
@@ -17,7 +17,7 @@ draft = false
     - Building a theory about hierarchical objects with explanatory capacity
     - Making abstract things sensible
 
-## ⦿ Economic perspective
+## Economic perspective
 We frame our goal for platform design in terms of scope economy, where competitive advantage and economic value are derived from joint production across product engineering teams.
 
 Cognitive scaffolding for teams enables cooperation by maintaining shared causal models and explicit expectations — providing structured support that offloads cognitive effort and reduces the cost of delays.

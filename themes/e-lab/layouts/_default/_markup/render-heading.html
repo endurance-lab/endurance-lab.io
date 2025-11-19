@@ -1,0 +1,2 @@
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | replaceRE "⦿" "<span class=\"symbol-digital-classical\">⦿</span>"
+    | safeHTML }} <a href="#{{ .Anchor | safeURL }}" class="anchor-link">#</a></h{{ .Level }}>

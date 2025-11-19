@@ -1,32 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=64941&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-    tailwind.config = {
-    theme: {
-        extend: {
-        fontFamily: {
-            title: ['AutoScape', 'sans-serif'],
-            subtitle: ['HomeVideo', 'sans-serif'],
-            regular: ['Kizhich', 'sans-serif'],
-        },
-        },
-    },
-    };
-</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<style>
-    html,
-    body {
-    margin: 0;
-    height: 100%;
-    }
-</style>
+
 <title>Tags | Endurance Lab</title>
 
   <link rel="preload" href="/fonts/AutoScape.woff2" as="font" type="font/woff2" crossorigin>
@@ -39,7 +19,7 @@
 
   <link rel="preload" href="/fonts/KizhichRegular.woff2" as="font" type="font/woff2" crossorigin>
 
-      <link rel="stylesheet" href="/css/main.min.817b90543b8134573024367d4049f3f0030bd754ac57d14e5cbeaefc3a9249c7.css" integrity="sha256-gXuQVDuBNFcwJDZ9QEnz8AML11SsV9FOXL6u/DqSScc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
 
 
 </head>
@@ -57,20 +37,33 @@
   
 
   
-    
-<div class="relative flex justify-end bg-black text-white w-full p-4">
-  R&D phase. General availability will be aligned with platform milestones.
-  <br />
-  Copyright ©2025 Endurance Lab / Endurance Intelligence
-  <br />
-  Page version 0.1.1
-</div>
-<script
-      src="/js/menu.f0c46aa2512e10bd7cf018b5c32a3e4ad59f81a4bc99926cea3b98f877aa99ab.js"
-      integrity="sha256-8MRqolEuEL188Bi1wyo&#43;StWfgaS8mZJs6juY&#43;Heqmas="
-      crossorigin="anonymous">
-    </script>
-
+    <footer class="footer"
+  style="background-color: var(--color-bg); padding: var(--spacing-xl) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--spacing-xxl);">
+  <div class="container">
+    <div style="margin-bottom: var(--spacing-lg);">
+      
+      <svg width="50" height="50" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+        style="opacity: 0.5;">
+        <circle cx="50" cy="50" r="48" stroke="var(--color-text)" stroke-width="2" />
+        <path d="M50 10 C 70 10, 90 30, 90 50 C 90 70, 70 90, 50 90 C 30 90, 10 70, 10 50 C 10 30, 30 10, 50 10 Z"
+          stroke="var(--color-text)" stroke-width="1" stroke-dasharray="4 4" />
+        <ellipse cx="50" cy="50" rx="30" ry="45" stroke="var(--color-text)" stroke-width="1"
+          transform="rotate(45 50 50)" />
+        <ellipse cx="50" cy="50" rx="30" ry="45" stroke="var(--color-text)" stroke-width="1"
+          transform="rotate(-45 50 50)" />
+      </svg>
+    </div>
+    <p
+      style="font-size: 0.9rem; color: var(--color-text); margin-bottom: var(--spacing-sm); font-family: var(--font-body);">
+      R&D phase. General availability will be aligned with platform milestones.
+    </p>
+    <p style="font-size: 0.8rem; color: var(--color-text); opacity: 0.6; font-family: var(--font-body);">
+      Copyright ©2025 Endurance Lab / Endurance Intelligence<br>
+      Page version 0.2.0 (Classical/Digital)
+    </p>
+  </div>
+</footer>
+<script src="/js/menu.js"></script>
   
 </body>
 </html>

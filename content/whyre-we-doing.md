@@ -4,7 +4,7 @@ date = 2025-06-17T08:00:00-07:00
 draft = false
 +++
 
-## ⦿ Why Systems Fail
+## Why Systems Fail
 
 > Anything that requires someone who is already very busy to spend time on something where the gains don’t appear worthwhile is likely to fail.
 
@@ -14,7 +14,7 @@ As Richard I. Cook noted in *How Complex Systems Fail*:
 > High-risk environments rarely collapse from a single error. Instead, many small factors accrue until the complexity that individuals must manage exceeds their ability.
 
 
-## ⦿ The Hidden Cost of Poor Cognitive Design
+## The Hidden Cost of Poor Cognitive Design
 
 Modern platforms often treat developers as end users — but they’re not designing for how people actually think and work.
 
@@ -28,7 +28,7 @@ Teams become overwhelmed, coordination costs rise, and decisions are made with i
 This is where Developer Experience (DX) becomes more than usability — it becomes cognitive scaffolding.
 
 
-## ⦿ Developer Experience as Cognitive scaffolding
+## Developer Experience as Cognitive scaffolding
 
 > Observability is the process through which one develops the ability to ask meaningful questions, get useful answers, and act effectively on what you learn.
 
@@ -44,7 +44,7 @@ This means:
 When done right, DX becomes the bridge between infrastructure and intention — turning tools into instruments for intelligent action.
 
 
-## ⦿ Balancing Tensions: Reliability, Integrity, and Relevance
+## Balancing Tensions: Reliability, Integrity, and Relevance
 
 No system exists in isolation. Every platform must balance competing priorities:
 - Reliability: Ensuring stability and safety
@@ -57,7 +57,7 @@ From Platform Engineering Book, Camille Fournier:
 > The next stage in removing our production training wheels as an industry is to tear down the fence between SRE and Product Engineering, and make rational investments in reliability as a mindset, based on specific needs.
 
 
-## ⦿ Toward Win-Win
+## Toward Win-Win
 
 Win-win doesn’t mean everyone gets exactly what they want — it means:
 - Teams operate with shared intent
