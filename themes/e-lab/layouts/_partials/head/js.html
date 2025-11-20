@@ -19,6 +19,20 @@
   {{- end -}}
 {{- end }}
 
+{{- with resources.Get "js/footer-animation.js" -}}
+  {{- $res := . | js.Build (merge $buildOpts (dict "targetPath" "js/footer-animation.js")) -}}
+  {{- if hugo.IsDevelopment -}}
+    <script src="{{ $res.RelPermalink }}"></script>
+  {{- else -}}
+    {{- $fp := $res | fingerprint -}}
+    <script
+      src="{{ $fp.RelPermalink }}"
+      integrity="{{ $fp.Data.Integrity }}"
+      crossorigin="anonymous">
+    </script>
+  {{- end -}}
+{{- end }}
+
 {{- if $page.IsHome -}}
   {{- with resources.Get "js/main.js" -}}
     {{- $res := . | js.Build (merge $buildOpts (dict "targetPath" "js/main.js")) -}}

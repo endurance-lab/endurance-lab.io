@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=64941&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -32,8 +33,7 @@
   
   
     <h2><a href="/posts/my-first-post/">My First Post</a></h2>
-    <h2 id="introduction">Introduction</h2>
-<p><strong>Test</strong></p>
+    <h2 id="introduction">Introduction <a href="#introduction" class="anchor-link">#</a></h2><p><strong>Test</strong></p>
   
   </div>
   </section>
@@ -44,17 +44,30 @@
     <footer class="footer"
   style="background-color: var(--color-bg); padding: var(--spacing-xl) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--spacing-xxl);">
   <div class="container">
-    <div style="margin-bottom: var(--spacing-lg);">
+    <div class="footer-logo-container" style="margin-bottom: var(--spacing-lg); display: inline-block; cursor: pointer;">
       
-      <svg width="50" height="50" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+      <svg class="footer-logo-svg" width="50" height="50" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
         style="opacity: 0.5;">
-        <circle cx="50" cy="50" r="48" stroke="var(--color-text)" stroke-width="2" />
-        <path d="M50 10 C 70 10, 90 30, 90 50 C 90 70, 70 90, 50 90 C 30 90, 10 70, 10 50 C 10 30, 30 10, 50 10 Z"
+        
+        <circle class="logo-outer-ring" cx="50" cy="50" r="48" stroke="var(--color-text)" stroke-width="2" />
+        
+        
+        <circle class="logo-glitch-red" cx="50" cy="50" r="48" stroke="#8A1C1C" stroke-width="2" style="opacity: 0; display: none;" />
+        <circle class="logo-glitch-blue" cx="50" cy="50" r="48" stroke="#0047AB" stroke-width="2" style="opacity: 0; display: none;" />
+
+        
+        <path class="logo-dashed-path" d="M50 10 C 70 10, 90 30, 90 50 C 90 70, 70 90, 50 90 C 30 90, 10 70, 10 50 C 10 30, 30 10, 50 10 Z"
           stroke="var(--color-text)" stroke-width="1" stroke-dasharray="4 4" />
-        <ellipse cx="50" cy="50" rx="30" ry="45" stroke="var(--color-text)" stroke-width="1"
+        
+        
+        <ellipse class="logo-inner-orbit-1" cx="50" cy="50" rx="30" ry="45" stroke="var(--color-text)" stroke-width="1"
           transform="rotate(45 50 50)" />
-        <ellipse cx="50" cy="50" rx="30" ry="45" stroke="var(--color-text)" stroke-width="1"
+        <ellipse class="logo-inner-orbit-2" cx="50" cy="50" rx="30" ry="45" stroke="var(--color-text)" stroke-width="1"
           transform="rotate(-45 50 50)" />
+          
+        
+        <circle class="logo-particle-1" cx="50" cy="50" r="2" fill="var(--color-text)" />
+        <circle class="logo-particle-2" cx="50" cy="50" r="1.5" fill="var(--color-text)" />
       </svg>
     </div>
     <p
@@ -67,7 +80,7 @@
     </p>
   </div>
 </footer>
-<script src="/js/menu.js"></script>
+<script src="/js/menu.js"></script><script src="/js/footer-animation.js"></script>
   
 </body>
 </html>

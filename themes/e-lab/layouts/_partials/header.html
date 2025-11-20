@@ -1,46 +1,24 @@
 <!-- Navigation -->
-<nav
-  style="position: fixed; top: 0; left: 0; width: 100%; padding: var(--spacing-md); z-index: 100; display: flex; justify-content: space-between; align-items: center; pointer-events: none;">
+<nav class="container" style="position: fixed; top: 0; left: 0; width: 100%; padding: var(--spacing-md); z-index: 100; display: flex; justify-content: space-between; align-items: center; pointer-events: none; max-width: none;">
   <!-- Logo (Hidden in Nav, visible in Hero) -->
   <div style="opacity: 0;">Endurance</div>
 
   <!-- Burger / Menu Trigger -->
-  <button id="burgerBtn"
-    style="pointer-events: auto; background: none; border: none; cursor: pointer; font-family: var(--font-body); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; display: flex; align-items: center; gap: 10px;">
+  <button id="burgerBtn" aria-label="Toggle Menu">
     <span>Menu</span>
-    <div style="width: 20px; height: 14px; display: flex; flex-direction: column; justify-content: space-between;">
-      <span style="display: block; width: 100%; height: 2px; background-color: var(--color-text);"></span>
-      <span style="display: block; width: 100%; height: 2px; background-color: var(--color-text);"></span>
-      <span style="display: block; width: 100%; height: 2px; background-color: var(--color-text);"></span>
+    <div class="burger-lines">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
     </div>
   </button>
 </nav>
 
+<!-- Overlay -->
+<div id="overlay"></div>
+
 <!-- Sidebar -->
-<div id="sidebar"
-  style="position: fixed; top: 0; right: 0; width: 300px; height: 100%; background-color: var(--color-bg); border-left: 2px solid var(--color-text); transform: translateX(100%); transition: transform 0.3s ease; z-index: 101; padding: var(--spacing-xl); box-shadow: -10px 10px 0 rgba(0,0,0,0.1);">
-  <button id="closeBtn"
-    style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--color-text);">×</button>
+<div id="sidebar">
+  <button id="closeBtn" aria-label="Close Menu">×</button>
   {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 </div>
-<div id="overlay" style="position: fixed; inset: 0; background-color: rgba(0,0,0,0.2); display: none; z-index: 100;">
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const burgerBtn = document.getElementById('burgerBtn');
-    const closeBtn = document.getElementById('closeBtn');
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('overlay');
-
-    function toggleMenu() {
-      const isOpen = sidebar.style.transform === 'translateX(0%)';
-      sidebar.style.transform = isOpen ? 'translateX(100%)' : 'translateX(0%)';
-      overlay.style.display = isOpen ? 'none' : 'block';
-    }
-
-    if (burgerBtn) burgerBtn.addEventListener('click', toggleMenu);
-    if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
-    if (overlay) overlay.addEventListener('click', toggleMenu);
-  });
-</script>

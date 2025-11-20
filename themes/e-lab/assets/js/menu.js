@@ -1,25 +1,43 @@
-/* ──────────── Бургер меню ─────────── */
-const burgerBtn = document.getElementById('burgerBtn');
-const sidebar = document.getElementById('sidebar');
-const overlay = document.getElementById('overlay');
+document.addEventListener('DOMContentLoaded', () => {
+  const burgerBtn = document.getElementById('burgerBtn');
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+  const closeBtn = document.getElementById('closeBtn');
 
-let open = false;
+  if (!burgerBtn || !sidebar || !overlay) return;
 
-burgerBtn.addEventListener('click', () => {
-  open = !open;
-  sidebar.classList.toggle('translate-x-full', !open);
-  overlay.classList.toggle('hidden', !open);
-
-  const [line1, line2, line3] = burgerBtn.querySelectorAll('span');
-  if (open) {
-    line1.classList.add('transform', 'rotate-45', '-translate-y-1/2');
-    line2.classList.add('opacity-0');
-    line3.classList.add('transform', '-rotate-45', '-translate-y-1/2');
-  } else {
-    line1.classList.remove('transform', 'rotate-45', '-translate-y-1/2');
-    line2.classList.remove('opacity-0');
-    line3.classList.remove('transform', '-rotate-45', '-translate-y-1/2');
+  function toggleMenu() {
+    const isOpen = sidebar.classList.contains('open');
+    
+    if (isOpen) {
+      sidebar.classList.remove('open');
+      overlay.classList.remove('visible');
+      burgerBtn.classList.remove('open');
+    } else {
+      sidebar.classList.add('open');
+      overlay.classList.add('visible');
+      burgerBtn.classList.add('open');
+    }
   }
-});
 
-overlay.addEventListener('click', () => burgerBtn.click());
+  burgerBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMenu();
+    });
+  }
+
+  overlay.addEventListener('click', toggleMenu);
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && sidebar.classList.contains('open')) {
+      toggleMenu();
+    }
+  });
+});
