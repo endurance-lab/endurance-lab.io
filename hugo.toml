@@ -2,3 +2,6 @@ baseURL = '/'
 languageCode = 'en-us'
 title = 'Endurance Lab'
 theme = "e-lab"
+
+[markup.goldmark.renderer]
+unsafe = true

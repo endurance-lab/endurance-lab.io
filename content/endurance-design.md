@@ -43,7 +43,7 @@ But considering our defined principles, we aim to design a platform with a tight
 
 And our platform should help human+AI agents make sense of what is going on and what to do next.
 
-## ⦿ Composable design
+## Composable design
 To effectively achieve the design targets for Flow, the platform should implement four independent components that are capable of providing conditions for information propagation — aligning perception, context, and action.
 
 - Observability
@@ -51,8 +51,11 @@ To effectively achieve the design targets for Flow, the platform should implemen
 - Inference
 - Assist
 
-## ⦿ Conceptual mapping
-```markdown
+## Conceptual mapping
+
+<div class="classical-border" style="width: 100%; max-width: 482px; margin: 2rem auto;">
+  <div class="classical-border-inner" style="background-color: var(--color-bg);">
+    <pre style="font-family: var(--font-code); font-size: 0.75rem; line-height: 1.2; overflow-x: auto; white-space: pre; margin: 0;">
 +-------------------------------------------------------------+
 |                       Endurance Platform                    |
 +-------------------------------------------------------------+
@@ -90,14 +93,16 @@ To effectively achieve the design targets for Flow, the platform should implemen
 |  +-------------------+       +-------------------+          |
 |                                                             |
 +-------------------------------------------------------------+
-```
+    </pre>
+  </div>
+</div>
 
-Concept breakdown:
- - Economy → Balancing Complexity : Aligns with scope economy principles.
- - Knowledge Flow : Central to enabling joint production and shared understanding.
- - Cognitive Scaffolding : Supports human cognition under uncertainty.
- - Observability : Enables contextual clarity and decision-making.
- - Developer Experience : Focuses on relevance realization and reducing cognitive load.
- - Decision-Making Under Uncertainty : Leverages shared causal models and AI cooperation.
- - Coordination : Implements promise theory for distributed responsibility.
- - Execution Engine : Acts as a medium for change, supporting flow and agency.
+### Concept breakdown:
+
+| Component | Description |
+| :--- | :--- |
+| **Economy / Culture** | Balancing complexity through scope economy and cumulative culture. |
+| **Knowledge Flow** | Enabling joint production via shared causal models and cognitive scaffolding. |
+| **Observability** | Contextual clarity supporting relevance realization. |
+| **Decision-Making** | Human-AI cooperation under uncertainty using promise theory. |
+| **Execution Engine** | Supporting flow, agency, and continuous verification. |

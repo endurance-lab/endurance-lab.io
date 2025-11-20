@@ -122,61 +122,86 @@
 <blockquote>
 <p>What are we model for? Fit to the model. Adapt</p></blockquote>
 <p>And our platform should help human+AI agents make sense of what is going on and what to do next.</p>
-<h2 id="-composable-design"><span class="symbol-digital-classical">⦿</span> Composable design <a href="#-composable-design" class="anchor-link">#</a></h2><p>To effectively achieve the design targets for Flow, the platform should implement four independent components that are capable of providing conditions for information propagation — aligning perception, context, and action.</p>
+<h2 id="composable-design">Composable design <a href="#composable-design" class="anchor-link">#</a></h2><p>To effectively achieve the design targets for Flow, the platform should implement four independent components that are capable of providing conditions for information propagation — aligning perception, context, and action.</p>
 <ul>
 <li>Observability</li>
 <li>Decision</li>
 <li>Inference</li>
 <li>Assist</li>
 </ul>
-<h2 id="-conceptual-mapping"><span class="symbol-digital-classical">⦿</span> Conceptual mapping <a href="#-conceptual-mapping" class="anchor-link">#</a></h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>+-------------------------------------------------------------+
-</span></span><span style="display:flex;"><span>|                       Endurance Platform                    |
-</span></span><span style="display:flex;"><span>+-------------------------------------------------------------+
-</span></span><span style="display:flex;"><span>|                                                             |
-</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
-</span></span><span style="display:flex;"><span>|  |   Economy         |       |   Cumulative      |          |
-</span></span><span style="display:flex;"><span>|  |   -&gt; Balancing    |       |   Culture         |          |
-</span></span><span style="display:flex;"><span>|  |   Complexity      |       |                   |          |
-</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
-</span></span><span style="display:flex;"><span>|           |                           ^                     |
-</span></span><span style="display:flex;"><span>|           v                           |                     |
-</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
-</span></span><span style="display:flex;"><span>|  |   Knowledge Flow  |       |   Cognitive       |          |
-</span></span><span style="display:flex;"><span>|  |   (Shared Causal  |       |   Scaffolding     |          |
-</span></span><span style="display:flex;"><span>|  |   Models)         |       |   (Above/Below    |          |
-</span></span><span style="display:flex;"><span>|  +-------------------+       |   the Line)       |          |
-</span></span><span style="display:flex;"><span>|           |                           |                     |
-</span></span><span style="display:flex;"><span>|           v                           |                     |
-</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
-</span></span><span style="display:flex;"><span>|  |   Observability   |       |   Developer       |          |
-</span></span><span style="display:flex;"><span>|  |   (Contextual     |       |   Experience      |          |
-</span></span><span style="display:flex;"><span>|  |   Clarity)        |       |   (Relevance      |          |
-</span></span><span style="display:flex;"><span>|  +-------------------+       |   Realization)    |          |
-</span></span><span style="display:flex;"><span>|           |                           |                     |
-</span></span><span style="display:flex;"><span>|           v                           |                     |
-</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
-</span></span><span style="display:flex;"><span>|  |   Decision-Making |       |   Coordination    |          |
-</span></span><span style="display:flex;"><span>|  |  Under Uncertainty|       |   (Promise Theory)|          |
-</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
-</span></span><span style="display:flex;"><span>|           |                           |                     |
-</span></span><span style="display:flex;"><span>|           v                           |                     |
-</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
-</span></span><span style="display:flex;"><span>|  |   Execution Engine|       |   Validation      |          |
-</span></span><span style="display:flex;"><span>|  |   (Flow Support)  |       |   <span style="color:#960050;background-color:#1e0010">&amp;</span> Verification  |          |
-</span></span><span style="display:flex;"><span>|  +-------------------+       +-------------------+          |
-</span></span><span style="display:flex;"><span>|                                                             |
-</span></span><span style="display:flex;"><span>+-------------------------------------------------------------+
-</span></span></code></pre></div><p>Concept breakdown:</p>
-<ul>
-<li>Economy → Balancing Complexity : Aligns with scope economy principles.</li>
-<li>Knowledge Flow : Central to enabling joint production and shared understanding.</li>
-<li>Cognitive Scaffolding : Supports human cognition under uncertainty.</li>
-<li>Observability : Enables contextual clarity and decision-making.</li>
-<li>Developer Experience : Focuses on relevance realization and reducing cognitive load.</li>
-<li>Decision-Making Under Uncertainty : Leverages shared causal models and AI cooperation.</li>
-<li>Coordination : Implements promise theory for distributed responsibility.</li>
-<li>Execution Engine : Acts as a medium for change, supporting flow and agency.</li>
-</ul>
+<h2 id="conceptual-mapping">Conceptual mapping <a href="#conceptual-mapping" class="anchor-link">#</a></h2><div class="classical-border" style="width: 100%; max-width: 482px; margin: 2rem auto;">
+  <div class="classical-border-inner" style="background-color: var(--color-bg);">
+    <pre style="font-family: var(--font-code); font-size: 0.75rem; line-height: 1.2; overflow-x: auto; white-space: pre; margin: 0;">
++-------------------------------------------------------------+
+|                       Endurance Platform                    |
++-------------------------------------------------------------+
+|                                                             |
+|  +-------------------+       +-------------------+          |
+|  |   Economy         |       |   Cumulative      |          |
+|  |   -> Balancing    |       |   Culture         |          |
+|  |   Complexity      |       |                   |          |
+|  +-------------------+       +-------------------+          |
+|           |                           ^                     |
+|           v                           |                     |
+|  +-------------------+       +-------------------+          |
+|  |   Knowledge Flow  |       |   Cognitive       |          |
+|  |   (Shared Causal  |       |   Scaffolding     |          |
+|  |   Models)         |       |   (Above/Below    |          |
+|  +-------------------+       |   the Line)       |          |
+|           |                           |                     |
+|           v                           |                     |
+|  +-------------------+       +-------------------+          |
+|  |   Observability   |       |   Developer       |          |
+|  |   (Contextual     |       |   Experience      |          |
+|  |   Clarity)        |       |   (Relevance      |          |
+|  +-------------------+       |   Realization)    |          |
+|           |                           |                     |
+|           v                           |                     |
+|  +-------------------+       +-------------------+          |
+|  |   Decision-Making |       |   Coordination    |          |
+|  |  Under Uncertainty|       |   (Promise Theory)|          |
+|  +-------------------+       +-------------------+          |
+|           |                           |                     |
+|           v                           |                     |
+|  +-------------------+       +-------------------+          |
+|  |   Execution Engine|       |   Validation      |          |
+|  |   (Flow Support)  |       |   & Verification  |          |
+|  +-------------------+       +-------------------+          |
+|                                                             |
++-------------------------------------------------------------+
+    </pre>
+  </div>
+</div>
+<h3 id="concept-breakdown">Concept breakdown: <a href="#concept-breakdown" class="anchor-link">#</a></h3><table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Component</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Economy / Culture</strong></td>
+          <td style="text-align: left">Balancing complexity through scope economy and cumulative culture.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Knowledge Flow</strong></td>
+          <td style="text-align: left">Enabling joint production via shared causal models and cognitive scaffolding.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Observability</strong></td>
+          <td style="text-align: left">Contextual clarity supporting relevance realization.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Decision-Making</strong></td>
+          <td style="text-align: left">Human-AI cooperation under uncertainty using promise theory.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Execution Engine</strong></td>
+          <td style="text-align: left">Supporting flow, agency, and continuous verification.</td>
+      </tr>
+  </tbody>
+</table>
 
   </div>
 

@@ -219,7 +219,7 @@ blockquote {
 
 .content-body {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
   line-height: 1.8;
   text-align: left;
   /* Back to left align for better readability on digital */
