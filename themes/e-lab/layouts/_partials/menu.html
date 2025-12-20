@@ -13,7 +13,7 @@ Renders a menu for the given menu ID.
 {{- with index site.Menus $menuID }}
 <div class="menu-header">
   <span class="menu-index-label">Index</span>
-  <span class="menu-version">v1.0</span>
+  <span class="menu-version">v0.3</span>
 </div>
 <ul class="space-y-2">
   {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}

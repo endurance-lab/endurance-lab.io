@@ -6,7 +6,7 @@ draft = false
 
 ## Principles
 
->Endurance cares about systems – so humans can too. Amplify human intelligence, not replace it.
+>Endurance cares about systems – so humans can too.
 
 1. Safety first design – grounded in complex adaptive systems theory (R. Cook)
 2. Cognitive scaffolding – supporting cumulative culture and psychological safety
@@ -24,7 +24,7 @@ Cognitive scaffolding for teams enables cooperation by maintaining shared causal
 
 This knowledge flow facilitates optimal decision-making among trusted agents — both human and AI — while enhancing the capacity for market adaptation.
 
-## ⦿ Strategic perspective
+## Strategic perspective
 Platform design should provide capabilities that help execute business (what) / product (how) activities in a measurable and repeatable way.
 
 This approach mirrors the verification – validation cycle: ensuring that we are building the right capabilities (validation), and that we are building them correctly (verification).
