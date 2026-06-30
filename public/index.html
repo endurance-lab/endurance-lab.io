@@ -113,7 +113,7 @@
   
   <g class="logo-main-layer">
     
-    <circle class="logo-outer-ring" cx="50" cy="50" r="35" stroke="var(--color-text)" stroke-width="1.5" />
+    <circle class="logo-outer-ring" cx="50" cy="50" r="35" stroke="var(--color-text)" stroke-width="0.0" />
 
     
     <path class="logo-dashed-path"
@@ -255,10 +255,7 @@
     <div class="grid grid-2">
       
       <div>
-        <div class="art-container">
-          <img src="/images/art-to-see.png" alt="Things that happen" class="art-image">
-          <div class="art-overlay">TO SEE</div>
-        </div>
+        <p class="art-label">OBSERVE</p>
         <h3>Things that happen</h3>
         <p>
           Events are things that happen once. We try to understand them from different perspectives, such as user
@@ -269,10 +266,7 @@
 
       
       <div>
-        <div class="art-container">
-          <img src="/images/art-to-learn.png" alt="Sense of activity" class="art-image">
-          <div class="art-overlay">TO LEARN</div>
-        </div>
+        <p class="art-label">LEARN</p>
         <h3>Sense of activity</h3>
         <p>
           We care about the conditions in which relevant events happen. They help us form a sense of context and give us
@@ -290,10 +284,7 @@
     <div class="grid grid-2">
       
       <div>
-        <div class="art-container">
-          <img src="/images/art-to-rise.png" alt="Power to run" class="art-image">
-          <div class="art-overlay">TO RISE</div>
-        </div>
+        <p class="art-label">CAPABILITY</p>
         <h3>Power to run</h3>
         <p>
           We build capabilities with the power to run activity the way it needs to be: with all the data required to
@@ -304,10 +295,7 @@
 
       
       <div>
-        <div class="art-container">
-          <img src="/images/art-to-act.png" alt="Flow solves autonomy" class="art-image">
-          <div class="art-overlay">TO ACT</div>
-        </div>
+        <p class="art-label">ASSIST</p>
         <h3>Flow solves autonomy</h3>
         <p>
           We do capability design for Flow — focusing on enabling change in a predictable ways with an affordable rate.
@@ -325,10 +313,7 @@
     <div class="grid grid-2">
       
       <div>
-        <div class="art-container">
-          <img src="/images/art-to-fall.png" alt="Engine for Flow" class="art-image">
-          <div class="art-overlay">TO FALL</div>
-        </div>
+        <p class="art-label">COHERENCE</p>
         <h3>Engine for Flow</h3>
         <p>
           When we don’t design for Flow, shared models become vulnerable to erosion. People responsible for maintaining
@@ -362,37 +347,13 @@
 </section>
 
 <style>
-  .art-container {
-    position: relative;
-    margin-bottom: var(--spacing-md);
-    overflow: hidden;
-    border: 1px solid var(--color-border);
-  }
-
-  .art-image {
-    width: 100%;
-    display: block;
-    filter: grayscale(100%) contrast(110%);
-    transition: filter 0.3s ease;
-  }
-
-  .art-container:hover .art-image {
-    filter: grayscale(0%) contrast(100%);
-  }
-
-  .art-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .art-label {
     font-family: var(--font-title);
-    font-size: 3rem;
-    color: white;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    letter-spacing: 2px;
-    pointer-events: none;
-    mix-blend-mode: overlay;
-    opacity: 0.9;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    color: var(--color-accent-primary);
+    margin: 0 0 var(--spacing-sm);
+    text-transform: uppercase;
   }
 </style>
 
@@ -427,7 +388,7 @@
   
   <g class="logo-main-layer">
     
-    <circle class="logo-outer-ring" cx="50" cy="50" r="35" stroke="var(--color-text)" stroke-width="1.5" />
+    <circle class="logo-outer-ring" cx="50" cy="50" r="35" stroke="var(--color-text)" stroke-width="0.0" />
 
     
     <path class="logo-dashed-path"
