@@ -1,5 +1,5 @@
 /* Design System - Endurance Intelligence (Classical/Digital) */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,400&family=Courier+Prime&display=swap');
+/* Fonts are loaded via <link> + preconnect in head.html for parallel fetch. */
 
 :root {
   /* Colors - Paper & Ink */
@@ -16,11 +16,29 @@
   --color-border: #D1D1CD;
   /* Pencil Grey */
 
-  /* Typography */
-  --font-title: 'Cormorant Garamond', serif;
-  --font-subtitle: 'Playfair Display', serif;
-  --font-body: 'Inter', sans-serif;
-  --font-code: 'Courier Prime', monospace;
+  /* Typography — roles */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Courier Prime', ui-monospace, monospace;
+  --font-cta: 'Space Grotesk', 'Inter', sans-serif;
+
+  /* Back-compat aliases (keep existing markup working) */
+  --font-title: var(--font-display);
+  --font-subtitle: var(--font-display);
+  --font-code: var(--font-mono);
+
+  /* Type scale — major third (~1.25) */
+  --step--1: 0.833rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.333rem;
+  --step-2: 1.666rem;
+  --step-3: 2.074rem;
+  --step-4: 2.592rem;
+  --step-5: 3.815rem;
+
+  /* Line heights */
+  --leading-tight: 1.15;
+  --leading-body: 1.6;
 
   /* Spacing */
   --spacing-sm: 0.5rem;
@@ -50,38 +68,103 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body);
-  line-height: 1.7;
+  font-weight: 400;
+  font-size: var(--step-0);
+  line-height: var(--leading-body);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 /* Typography Utilities */
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-title);
   margin-bottom: var(--spacing-md);
   color: var(--color-text);
   font-weight: 400;
+  line-height: var(--leading-tight);
+  text-wrap: balance;
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 1.1;
+  font-size: clamp(2.5rem, 6vw + 1rem, 3.8rem);
   letter-spacing: -0.02em;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h3 {
+  font-size: var(--step-2);
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: var(--step-1);
+}
+
+h5 {
+  font-size: var(--step-0);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+h6 {
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+p {
+  font-size: var(--step-0);
+  margin-bottom: var(--spacing-md);
+  max-width: 65ch;
+  font-weight: 400;
+  text-wrap: pretty;
+}
+
+/* Optional decorative underline for section headings (opt-in) */
+.h2--ruled {
   border-bottom: 1px solid var(--color-border);
   padding-bottom: var(--spacing-sm);
   display: inline-block;
 }
 
-p {
-  font-size: 1.1rem;
-  margin-bottom: var(--spacing-md);
-  max-width: 65ch;
+/* Lead / intro paragraph */
+.lead {
   font-weight: 300;
+  font-size: var(--step-1);
+  max-width: 60ch;
+}
+
+/* Eyebrow / small label above headings */
+.eyebrow,
+.art-label {
+  font-family: var(--font-display);
+  font-size: var(--step--1);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent-primary);
+  margin: 0 0 var(--spacing-sm);
+}
+
+/* Big uppercase call-to-action headline */
+.headline-cta {
+  font-family: var(--font-cta);
+  font-weight: 700;
+  font-size: clamp(2.25rem, 5vw + 1rem, 3.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-wrap: balance;
+  border: none;
 }
 
 a {
@@ -153,9 +236,9 @@ a:hover {
 }
 
 blockquote {
-  font-family: var(--font-subtitle);
+  font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: var(--step-1);
   border-left: 2px solid var(--color-accent-primary);
   padding-left: var(--spacing-md);
   margin: var(--spacing-lg) 0;
@@ -196,23 +279,23 @@ blockquote {
 }
 
 .content-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 3.5rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5vw + 1rem, 3.5rem);
   font-weight: 600;
   margin-bottom: var(--spacing-sm);
   color: var(--color-text);
-  line-height: 1.1;
+  line-height: var(--leading-tight);
 }
 
 .content-date {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--font-display);
   font-style: italic;
   color: var(--color-accent-primary);
-  font-size: 1.2rem;
+  font-size: var(--step-1);
 }
 
 .header-separator {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--font-display);
   font-size: 1.5rem;
   color: var(--color-accent-primary);
   margin-top: var(--spacing-md);
@@ -221,11 +304,10 @@ blockquote {
 }
 
 .content-body {
-  font-family: 'Cormorant Garamond', serif;
-  /* font-size: 1.4rem; */
-  line-height: 1.8;
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: var(--leading-body);
   text-align: left;
-  /* Back to left align for better readability on digital */
 }
 
 .content-body p {
@@ -241,12 +323,12 @@ blockquote {
 }
 
 .content-body h2 {
-  font-size: 2rem;
+  font-size: var(--step-2);
   margin-top: var(--spacing-lg);
   margin-bottom: var(--spacing-md);
   border-bottom: 1px solid var(--color-border);
   padding-bottom: var(--spacing-sm);
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display);
   position: relative;
 }
 
